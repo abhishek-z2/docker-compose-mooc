@@ -1,6 +1,6 @@
 services:
   backend:
-    image: abhisheksivan/backend
+    image: abhisheksivan/backend:codespaces-local
     environment:
       - REQUEST_ORIGIN=http://localhost:8000
       - REDIS_HOST=redis
@@ -14,7 +14,7 @@ services:
       - db
 
   frontend:
-    image: abhisheksivan/frontend
+    image: abhisheksivan/frontend:codespaces-local
 
   db:
     image: postgres:18
